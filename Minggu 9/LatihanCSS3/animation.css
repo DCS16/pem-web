@@ -1,0 +1,23 @@
+body {
+	background: #35A9DB;
+	font-family: arial;
+	text-align: center;
+}
+
+h1, h2 {
+	color: #fff;
+}
+
+div {
+	background: yellowgreen;
+	width: 200px;
+	height: 200px;
+	border-radius: 100%;
+	animation-name: animasi_lingkaran;
+	animation-duration: 5s;
+}
+
+@keyframes animasi_lingkaran{
+	from{ background: yellowgreen;}
+	to{background: red;}
+}
