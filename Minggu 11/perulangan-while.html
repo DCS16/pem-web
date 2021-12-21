@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Perulangan while</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var ulangi = confirm("Apakah Anda hendak mengulang?");
+		var counter = 0;
+
+		while(ulangi){
+		    var jawab = confirm("Apakah Anda hendak mengulang?")
+		    counter++;
+		    if(jawab == false){
+		        ulangi = false;
+		    }
+		}
+
+		document.write("Anda telah mengulang sebanyak "+ counter +" kali"); 
+	</script>
+</body>
+</html>
