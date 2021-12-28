@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM API javascript</title>
+</head>
+<body>
+    <p class="paragraf">Nulla tempor nostrud veniam dolor officia minim in minim deserunt 
+        excepteur dolore reprehenderit. Est ex qui enim ipsum ex exercitation amet cillum veniam 
+        commodo aliqua nulla aute eu. Eu adipisicing velit veniam ex deserunt officia pariatur 
+        deserunt tempor ex minim labore consectetur. Consequat fugiat sint et sint sint deserunt exercitation. 
+        Aute consectetur sint eiusmod aliqua enim commodo. Duis consectetur enim eu amet in ut aute tempor nostrud et fugiat deserunt.
+    </p>
+    <p class="paragraf">Nulla tempor nostrud veniam dolor officia minim in minim deserunt 
+        excepteur dolore reprehenderit. Est ex qui enim ipsum ex exercitation amet cillum veniam 
+        commodo aliqua nulla aute eu. Eu adipisicing velit veniam ex deserunt officia pariatur 
+        deserunt tempor ex minim labore consectetur. Consequat fugiat sint et sint sint deserunt exercitation. 
+        Aute consectetur sint eiusmod aliqua enim commodo. Duis consectetur enim eu amet in ut aute tempor nostrud et fugiat deserunt.
+    </p>
+    <p class="paragraf">Nulla tempor nostrud veniam dolor officia minim in minim deserunt 
+        excepteur dolore reprehenderit. Est ex qui enim ipsum ex exercitation amet cillum veniam 
+        commodo aliqua nulla aute eu. Eu adipisicing velit veniam ex deserunt officia pariatur 
+        deserunt tempor ex minim labore consectetur. Consequat fugiat sint et sint sint deserunt exercitation. 
+        Aute consectetur sint eiusmod aliqua enim commodo. Duis consectetur enim eu amet in ut aute tempor nostrud et fugiat deserunt.
+    </p>
+    <script type="text/javascript">
+        var paragraf = document.getElementsByClassName("paragraf");
+        setInterval(function (){
+            paragraf[0].style.color = "red";
+            paragraf[1].style.color = "green";
+            paragraf[2].style.color = "blue";
+
+            setTimeout(function(){
+                paragraf[0].style.color = "black";
+                paragraf[1].style.color = "black";
+                paragraf[2].style.color = "black";
+            }, 500)
+        }, 1000);
+    </script>
+</body>
+</html>
