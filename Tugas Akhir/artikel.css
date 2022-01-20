@@ -1,0 +1,122 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+.header{
+    position: relative;
+    height: 80px;
+}
+.logo{
+    float: left;
+    margin-left: 15px;
+}
+.TaRan{
+    font-family: 'Sofia', cursive;
+    font-size: 35px;
+    padding: 10px;
+    margin: 0px;
+}
+.navicon{
+    float: left;
+    padding: 22px 20px 20px 20px;
+}
+.icon{
+    float: left;
+    position: relative;
+}
+.toph{
+    display: none;
+    position: absolute;
+    top: 22px;
+    left: 20px;
+}
+.topm{
+    display: none;
+    position: absolute;
+    top: 22px;
+    left: 20px;
+}
+.topn{
+    display: none;
+    position: absolute;
+    top: 22px;
+    left: 20px;
+}
+.home{
+    float: left;
+    position: relative;
+}
+.home:hover .toph{
+    display: inline;
+}
+.message{
+    float: left;
+    position: relative;
+}
+.message:hover .topm{
+    display: inline;
+}
+.notif{
+    float: left;
+    position: relative;
+}
+.notif:hover .topn{
+    display: inline;
+}
+.searchbar{
+    display: inherit;
+    float: left;
+    width: 965px;
+    top: 30px;
+    padding: 13px 20px 13px 20px;
+}
+.search{
+    float: left;
+    width: 910px;
+    height: 45px;
+    font-size: 25px;
+    font-weight: lighter;
+    color: #939393;
+    background-color: #EAEAEA;
+    background-image: url(img/telusuri.svg);
+    background-repeat: no-repeat;
+    background-position: 1.5%;
+    padding-left: 50px;
+    padding-right: 10px;
+    border: none;
+    border-radius: 32.5px 32.5px 32.5px 32.5px;
+}
+.profil{
+    float: left;
+}
+.profil img{
+    margin-left: 15px;
+    margin-top: 10px;
+    width: 50px;
+    height:50px;
+    border-radius: 50%;
+}
+.arrow img{
+    padding: 25px 20px;
+    float: left;
+}
+.pesan{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    width: 1370px;
+    height: 650px;
+    border-width: 2px;
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 30px;
+    padding: 30px;
+}
+.profil_konten {
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+}
