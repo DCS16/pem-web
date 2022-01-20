@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TaRan</title>
-    <link rel="stylesheet" href="pesan.css">
+    <link rel="stylesheet" href="tanya.css">
 </head>
 <body>
     <div class="header">
@@ -57,35 +57,31 @@
                     </tr>
                 </table>
             </tr>
-            <tr style="height: 480px; bottom: 10px; vertical-align: bottom;">
-                <p style="height: 480px; bottom: 10px; color: #8B8B8B; vertical-align: bottom;">Belum ada pesan</p>
+            <tr>
+                <td>
+                    <h1>
+                        Tuliskan Pertanyaan Anda !!!
+                    </h1>
+                </td>
+            </tr>
+            <tr style="text-align: left;">
+                <p style="">Kiat untuk mendapatkan jawaban yang baik dengan cepat</p>
+                <ol>
+                    <li>Pastikan pertanyaan Anda belum pernah diajukan sebelumnya</li>
+                    <li>Pastikan pertanyaan Anda singkat, padat, dan lugas</li>
+                    <li>Periksa kembali tata bahasa dan ejaan yang ada</li>
+                </ol>
             </tr>
             <tr>
-                <td style="width: 90%;">
-                    <input type="text" name="pesan" id="pesan" class="input-pesan" placeholder="Masukan pesan...">
-                </td>
                 <td>
+                    <textarea name="pertanyaam/jawaban" id="tanya-jawab" cols="80" rows="10" class="input-pesan" placeholder="Mulai tulis pertanyaan/jawaban Anda..."></textarea>
+                </td>
+                <td style="vertical-align: bottom; text-align: center; width: 60px;">
                     <img src="img/kirim.svg" alt="kirim">
                 </td>
             </tr>
         </table>
     </div>
     <br>
-    <p id="tanggal"></p>
-	<div class="jam_digital" id="jam_digital">
-	</div>
-	<script type="text/javascript">
-		var tgl = new Date();
-		document.getElementById("tanggal").innerHTML = "Waktu akses " + tgl;
-
-		window.setTimeout("waktu()", 1000);
-		function waktu(){
-			var waktu = new Date();
-			setTimeout("waktu()", 1000);
-			document.getElementById("jam").innerHTML = waktu.getHours();
-			document.getElementById("menit").innerHTML = waktu.getMinutes();
-			document.getElementById("detik").innerHTML = waktu.getSeconds();
-		}
-	</script>
 </body>
 </html>

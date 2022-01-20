@@ -49,12 +49,13 @@
             <td>
                 <div class="profil1">
                     <div style="height: 275px;">
+                        d
                         <img src="img/banner.png" class="banner" alt="produk1" style="height: 350px;">
                         </div>
                         <img src="img/profil2.png" alt="profil2" style="width: 150px; height:150px; border-radius: 50%;">
                         <h1 style="margin-bottom: 0px;">Ni Ketut Damayanti</h1>
                         <p style="font-size: 25px; font-weight: lighter; margin-top: 3px;">Gianyar, Bali</p>
-                        <a href="profil">
+                        <a href="profil.html">
                             <div class="ikuti">
                                 <p style="margin: 10px;">IKUTI</p>
                             </div>
@@ -195,5 +196,21 @@
         </tr>
         
     </table>
+    <p id="tanggal"></p>
+	<div class="jam_digital" id="jam_digital">
+	</div>
+	<script type="text/javascript">
+		var tgl = new Date();
+		document.getElementById("tanggal").innerHTML = "Waktu akses " + tgl;
+
+		window.setTimeout("waktu()", 1000);
+		function waktu(){
+			var waktu = new Date();
+			setTimeout("waktu()", 1000);
+			document.getElementById("jam").innerHTML = waktu.getHours();
+			document.getElementById("menit").innerHTML = waktu.getMinutes();
+			document.getElementById("detik").innerHTML = waktu.getSeconds();
+		}
+	</script>
 </body>
 </html>
